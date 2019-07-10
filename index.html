@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS Game</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <!-- Our Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Container for the whole page -->
+    <div class= "container-fluid">
+        <!-- Jumbotron for the landing page -->
+        <div class= "jumbotron" id="rps-jumbotron">
+            <h1>Welcome to the RPS Game!</h1>
+            <hr>
+            <h2>Rules:</h2>
+            <ul>
+                <li>Rock: Wins Against <strong>SCISSORS</strong>, losses to <strong>PAPER</strong>.</li>
+                <li>Paper: Wins Against <strong>ROCK</strong>, losses to <strong>SCISSORS</strong>.</li>
+                <li>Scissors: Wins Against <strong>PAPER</strong>, losses to <strong>ROCK</strong>.</li>
+            </ul>
+            <hr>
+            <div class="heading-container">
+                    <h3>Press R, P, or S to get started!</h3>
+            </div>
+        </div>
+        <!-- Gameboard View -->
+        <div class="card-group" id="rps-card-group">
+            <!-- card 1 -->
+            <div class="card">
+                <h4>User Choice:</h4>
+                <hr>
+                <img src="assets/imgs/1200px-Rock-paper-scissors.svg.png" id="user-img" alt="RPS image">
+            </div>
+            <!-- card 2 -->
+            <div class="card">
+                    <h4>Current Score:</h4>
+                    <hr>
+                    <p>Wins: <strong><span id="winCount"></span></strong></p>
+                    <p>Losses: <strong><span id="loseCount"></span></strong></p>
+                    <p>Ties: <strong><span id="tieCount"></span></strong></p>
+                    <button type="button" class="btn btn-danger" id="reset-btn">Reset Score</button>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+                    <h4>Computers Choice:</h4>
+                    <hr>
+                    <img src="assets/imgs/1200px-Rock-paper-scissors.svg.png" id="computer-img" alt="RPS image">
+            </div>
+        </div>
+    </div>
+  <script type="text/javascript" src="assets/js/rps.js"></script>  
+</body>
+</html>
